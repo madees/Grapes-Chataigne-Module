@@ -1,0 +1,36 @@
+# Grapes-Chataigne-module
+This is a module to control Grapes 3D Audio Control, which is a software developed by Not a Number - studio for 3D audio.
+
+More info about Chataigne : https://benjamin.kuperberg.fr/chataigne
+
+More info about Grapes : https://grapes-3d.com/
+
+## OSC Output
+This module is output only, OSC output is set to Local as default.
+If Grapes doesn't run on the same computer as Chataigne, just change OSC output in module parameters to fit you're Grapes computer IP.
+
+## Commands
+This module send all the commands defined in Grapes v1.1.0.
+
+### For Clips :
+Commands parameters are track (integer, 1-64) and clip (integer, 1-16) index.
+- resume
+- forcerresume
+- play
+- forceplay
+- stop
+- forcestop
+- pause
+- forcepause
+
+### For Rows :
+Commands parameter is row index (1-16).
+- play
+- forceplay
+- resume
+- forceresume
+- pause
+- forcepause
+- stop
+- forcestop
+

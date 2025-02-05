@@ -1,0 +1,356 @@
+{
+  "name":"Grapes OSC Control",
+  "type":"OSC",
+  "path":"Software",
+  
+  "version":"1.0.0",
+  "description":"Grapes 3D Audio Control is a product developed by Not a Number Studio for 3D audio.",
+  "url":"https://github.com/madees/Grapes3D-Chataigne-module",
+  "downloadURL":"https://github.com/madees/Grapes3D-Chataigne-module/archive/master.zip",
+
+  "hasInput": false,
+	"hasOutput": true, 
+	"hideDefaultCommands": true,
+	"hideDefaultParameters": [
+		"autoRange",
+		"autoFeedback",
+    "autoAdd",
+		"pass_through",
+		"input",
+		"outputs",
+		"useHierarchy",
+		"colorSendMode",
+		"booleanSendMode",
+    "oscOutputs/oscOutput/remotePort",
+		"oscOutputs/oscOutput/listenToFeedback",
+	  "clearValues"
+	],
+  
+  "defaults":
+  {	
+  "autoAdd": false,
+	"OSC Outputs": {
+			"OSC Output": 
+      {
+				"remotePort": 54103
+			}
+		}
+  },
+	"scripts": [
+		"Grapes-OSC.js"
+	],
+  "commands":
+  {
+    "Clip resume":
+    {
+      "menu":"Clips",  
+      "callback":"clipResume",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+
+    "Clip force resume":
+    {
+      "menu":"Clips",  
+      "callback":"clipForceResume",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+
+    "Clip play":
+    {
+      "menu":"Clips",  
+      "callback":"clipPlay",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Clip force play":
+    {
+      "menu":"Clips",  
+      "callback":"clipForceResume",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+
+    "Clip stop":
+    {
+      "menu":"Clips",  
+      "callback":"clipStop",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+
+    "Clip force stop":
+    {
+      "menu":"Clips",  
+      "callback":"clipForceStop",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Clip pause":
+    {
+      "menu":"Clips",  
+      "callback":"clipPause",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Clip force pause":
+    {
+      "menu":"Clips",  
+      "callback":"clipForcePause",
+      "parameters":
+      {
+        "Track index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":64,
+          "default":1
+        },
+        "Clip index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row play":
+    {
+      "menu":"Rows",  
+      "callback":"rowPlay",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row force play":
+    {
+      "menu":"Rows",  
+      "callback":"rowForcePlay",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row resume":
+    {
+      "menu":"Rows",  
+      "callback":"rowResume",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row force resume":
+    {
+      "menu":"Rows",  
+      "callback":"rowForceResume",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row pause":
+    {
+      "menu":"Rows",  
+      "callback":"rowPause",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row force pause":
+    {
+      "menu":"Rows",  
+      "callback":"rowForcePause",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row stop":
+    {
+      "menu":"Rows",  
+      "callback":"rowStop",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    },
+    
+    "Row force stop":
+    {
+      "menu":"Rows",  
+      "callback":"rowForceStop",
+      "parameters":
+      {
+        "Row index":
+        {
+          "type":"Integer",
+          "min":1,
+          "max":16,
+          "default":1
+        }
+      }
+    }
+  }
+}
