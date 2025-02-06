@@ -5,8 +5,8 @@
   
   "version":"1.0.0",
   "description":"Grapes 3D Audio Control is a product developed by Not a Number Studio for 3D audio.",
-  "url":"https://github.com/madees/Grapes3D-Chataigne-module",
-  "downloadURL":"https://github.com/madees/Grapes3D-Chataigne-module/archive/master.zip",
+  "url":"https://github.com/madees/Grapes-Chataigne-module",
+  "downloadURL":"https://github.com/madees/Grapes-Chataigne-module/archive/master.zip",
 
   "hasInput": false,
 	"hasOutput": true, 
